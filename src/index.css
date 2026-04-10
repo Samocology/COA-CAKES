@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 230 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 25% 15%;
+
+    --primary: 270 60% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 30% 95%;
+    --secondary-foreground: 270 60% 45%;
+
+    --muted: 40 20% 96%;
+    --muted-foreground: 230 10% 45%;
+
+    --accent: 40 95% 55%;
+    --accent-foreground: 230 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 15% 90%;
+    --input: 230 15% 90%;
+    --ring: 270 60% 45%;
+
+    --radius: 0.5rem;
+
+    --navy: 235 40% 15%;
+    --navy-foreground: 0 0% 95%;
+
+    --purple-light: 270 40% 96%;
+    --amber: 40 95% 55%;
+    --amber-dark: 35 90% 48%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(270 60% 45% / 0.85), hsl(270 60% 30% / 0.9));
+  }
+  .gradient-cta {
+    background: linear-gradient(135deg, hsl(270 60% 40%), hsl(270 70% 50%));
+  }
+  .gradient-booking {
+    background: linear-gradient(135deg, hsl(270 60% 45%), hsl(35 90% 55%));
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(270 60% 45%), hsl(270 70% 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
