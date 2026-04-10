@@ -22,6 +22,14 @@ const foodItems = [
   { src: foodSmallchops, label: "Small Chops" },
   { src: foodChocolate, label: "Chocolates" },
   { src: foodFruittart, label: "Fruit Tarts" },
+  {
+    src: "https://static.vecteezy.com/system/resources/thumbnails/030/664/237/small_2x/chinese-food-pu-pu-platter-with-metal-barbeque-free-photo.jpg",
+    label: "Chinese Food",
+  },
+  {
+    src: "https://i.pinimg.com/236x/a9/08/94/a90894d4d03d4ba8a322fd68548c76ee.jpg",
+    label: "Shawarma",
+  },
 ];
 
 const backgrounds = [heroBg1, heroBg2, heroLanding, heroBg1, heroBg2, heroLanding, heroBg1];
@@ -38,6 +46,8 @@ const scatterDirections = [
   { x: -1.2, y: 4.0 },
   { x: 1.0, y: 3.8 },
   { x: 0, y: 4.5 },
+  { x: -2.2, y: 3.0 },
+  { x: 2.2, y: 4.0 },
 ];
 
 const OrbitingFoodHero = () => {

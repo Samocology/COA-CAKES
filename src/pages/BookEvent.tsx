@@ -8,10 +8,10 @@ import cakeImg from "@/assets/cakes-pastries.jpg";
 import spreadImg from "@/assets/catering-spread.jpg";
 
 const steps = [
-  { icon: MessageSquare, title: "Contact Us", desc: "Reach out with your event details" },
-  { icon: FileText, title: "Consultation", desc: "We discuss your vision, menu, and budget" },
-  { icon: Handshake, title: "Agree & Deposit", desc: "Finalize details and secure your date" },
-  { icon: PartyPopper, title: "The Celebration", desc: "We deliver a flawless experience" },
+  { icon: MessageSquare, title: "Contact Details", desc: <i>Help us get to know you... </i> },
+  { icon: FileText, title: "Event Information", desc: <i>We discuss your vision, menu, and budget</i> },
+  { icon: Handshake, title: "Agree & Deposit", desc: <i>Finalize details and secure your date</i> },
+  { icon: PartyPopper, title: "Details & Budget", desc: <i>We deliver a flawless experience</i> },
 ];
 
 const serviceOptions = ["Birthday Cakes", "Wedding Cakes", "Event Catering", "Conference Menus", "Pastry Platters", "Full Event Planning"];
